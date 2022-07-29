@@ -1,0 +1,161 @@
+@import 'sidebar.css';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(#010141, #000000 75%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 10px;
+}
+.all{
+    width: 70%;
+    max-width: 500px;
+    min-height: 600px;
+    max-height: 600px;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.all > div:not(.inputs){
+    width: 100%;
+    text-align: center;
+}
+.all div h1{
+    padding: .4rem;
+}
+@media (max-width: 320px) {
+    .all{
+        width: 95%;
+        max-height: 300px;
+    }
+    .addtask:hover{
+        background-color: #010141;
+    }
+    .addtask:active{
+        background-color: #010141;
+    }
+}
+@media(max-width: 800px){
+    .all{
+        width: 90%;
+        max-height: 500px;
+    }
+    .addtask:hover{
+        background-color: #010141;
+    }
+    .addtask:active{
+        background-color: #010141;
+    }
+}
+.time{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.container-inputs{
+    display: flex;
+    justify-content: center;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.inputs > input{
+    height: 35px;
+    border-radius: 5px;
+    text-align: center;
+
+    margin-bottom: 15px;
+}
+.addtask{
+    transition: 1s;
+    background-color: #010141;
+    color: #EEEEEE;
+}
+.addtask:hover{
+    transition: 1s;
+    background-color: #EEEEEE;
+    color: #010141;
+    cursor: pointer;
+}
+.addtask:active{
+    transition: 0;
+    color: #EEEEEE;
+    background-color: #2d2d8d;
+}
+@media(max-width: 320px){
+    .addtask:hover{
+        background-color: #010141;
+        color: #EEEEEE;
+    }
+    .addtask:active{
+        background-color: #010141;
+        color: #EEEEEE;
+    }
+}
+@media(max-width: 900px){
+    .addtask:hover{
+        background-color: #010141;
+        color: #EEEEEE;
+    }
+    .addtask:active{
+        background-color: #010141;
+        color: #EEEEEE;
+    }
+}
+.container{
+    height: 60%;
+    border: 1px solid #000000;
+    overflow-x: hidden;
+}
+.container > p{
+    transition: 1s;
+    border-top: #010141 1px solid;
+}
+.container > p:hover{
+    transition: 1s;
+    background-color: #3f3f7e;
+    color: #EEEEEE;
+}
+.delete-button{
+    width: 100px;
+    height: 30px;
+    margin-bottom: 5px;
+    color: #EEEEEE;
+    background-color: #7c0303;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.delete-button:hover{
+    background-color: #500101;
+}
+.delete-button:active{
+    background-color: #310101;
+}
+.window-alert{
+    transition: 1s;
+    opacity: 0;
+    width: 200px;
+    height: 100px;
+    position: fixed;
+    top: 10px;
+    left: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7c0303;
+    color: #EEEEEE;
+}
+.window-alert-dinamic{
+    transition: 1s;
+    opacity: 1;
+}
